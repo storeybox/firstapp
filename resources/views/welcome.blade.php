@@ -34,12 +34,13 @@
                 font-size: 96px;
             }
         </style>
-        <link rel="stylesheet" href="<?php echo asset('css/main.css'); ?>" type="text/css">
+        <link rel="stylesheet" href="{{asset('css/main.css')}}" type="text/css">
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title highlight">Laravel 5</div>
+                <div class="title highlight">Laravel 5 in {{ $theLocation }}</div>
+                <p> on {{ date('M d, Y')}}.</p>
             </div>
         </div>
     </body>

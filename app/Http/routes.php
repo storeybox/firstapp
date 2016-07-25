@@ -1,5 +1,6 @@
 <?php
 
+use App\Painting;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -12,7 +13,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  //
+    return view('welcome', array('theLocation' =>'Dunkirk'));
 });
 
 Route::get('about', function() {
